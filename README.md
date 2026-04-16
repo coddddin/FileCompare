@@ -57,21 +57,28 @@
 
 ## 📸 과제 2: 폴더 선택 및 파일 비교 (색상 구분)
 
-![과제2 실행화면](img/screenshot-2.png)
+![과제2 실행화면](img/2color.png)
 
 **✅ 과제 내용**
 - `FolderBrowserDialog`를 이용한 폴더 경로 선택 기능
 - 두 폴더의 파일을 비교하여 상태에 따라 아이템 색상 변경
 
 **💡 상세 구현 내용**
-- `DirectoryInfo.GetFiles()`로 파일 목록을 가져온 후, 양쪽 폴더에 동일한 이름이 있는지 확인합니다. 
+- `DirectoryInfo.GetFiles()`로 파일 목록을 가져온 후, 양쪽 폴더에 동일한 이름이 있는지 확인.
+
+- 파일이 존재할 경우 `LastWriteTime`을 비교하여 최신 파일과 이전 파일을 구분.
+
+- 각 상태에 따라 `ListViewItem.ForeColor` 속성을 설정하여 사용자에게 시각적으로 차이를 명확히 전달하도록 구현했습니다. 
+
 - **색상 규칙 적용:** - 동일 파일: 검은색
   - 최신 파일(New): 빨간색
   - 이전 파일(Old): 회색
   - 단독 파일: 보라색
 
 **🔬 분석 및 학습 포인트**
-- `DateTime.Compare` 또는 `LastWriteTime` 비교를 통해 논리적인 상태값을 도출하는 과정을 실습했습니다. `ListViewItem.ForeColor` 속성을 활용해 사용자에게 데이터의 차이를 시각적으로 명확히 전달하는 UX 기법을 배웠습니다.
+- `DateTime.Compare` 또는 `LastWriteTime` 비교를 통해  상태값을 도출하는 과정을 실습했습니다.
+
+- `ListViewItem.ForeColor` 속성을 활용해 사용자에게 데이터의 차이를 시각적으로 명확히 전달하는 UX 기법을 배웠습니다.
 
 ---
 

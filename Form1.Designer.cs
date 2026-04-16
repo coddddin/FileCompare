@@ -44,7 +44,7 @@
             panel1 = new Panel();
             panel2 = new Panel();
             panel6 = new Panel();
-            lvwrightDir = new ListView();
+            lvwRightDir = new ListView();
             name_Right = new ColumnHeader();
             size_Right = new ColumnHeader();
             date_Right = new ColumnHeader();
@@ -181,7 +181,7 @@
             // name_Left
             // 
             name_Left.Text = "이름";
-            name_Left.Width = 180;
+            name_Left.Width = 200;
             // 
             // size_Left
             // 
@@ -217,30 +217,30 @@
             // panel6
             // 
             panel6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel6.Controls.Add(lvwrightDir);
+            panel6.Controls.Add(lvwRightDir);
             panel6.Location = new Point(0, 139);
             panel6.Name = "panel6";
             panel6.Size = new Size(373, 248);
             panel6.TabIndex = 8;
             // 
-            // lvwrightDir
+            // lvwRightDir
             // 
-            lvwrightDir.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lvwrightDir.BorderStyle = BorderStyle.FixedSingle;
-            lvwrightDir.Columns.AddRange(new ColumnHeader[] { name_Right, size_Right, date_Right });
-            lvwrightDir.FullRowSelect = true;
-            lvwrightDir.GridLines = true;
-            lvwrightDir.Location = new Point(0, 1);
-            lvwrightDir.Name = "lvwrightDir";
-            lvwrightDir.Size = new Size(373, 247);
-            lvwrightDir.TabIndex = 1;
-            lvwrightDir.UseCompatibleStateImageBehavior = false;
-            lvwrightDir.View = View.Details;
+            lvwRightDir.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lvwRightDir.BorderStyle = BorderStyle.FixedSingle;
+            lvwRightDir.Columns.AddRange(new ColumnHeader[] { name_Right, size_Right, date_Right });
+            lvwRightDir.FullRowSelect = true;
+            lvwRightDir.GridLines = true;
+            lvwRightDir.Location = new Point(0, 1);
+            lvwRightDir.Name = "lvwRightDir";
+            lvwRightDir.Size = new Size(373, 247);
+            lvwRightDir.TabIndex = 1;
+            lvwRightDir.UseCompatibleStateImageBehavior = false;
+            lvwRightDir.View = View.Details;
             // 
             // name_Right
             // 
             name_Right.Text = "이름";
-            name_Right.Width = 180;
+            name_Right.Width = 200;
             // 
             // size_Right
             // 
@@ -312,7 +312,7 @@
         private Panel panel3;
         private ListView lvwLeftDir;
         private Panel panel6;
-        private ListView lvwrightDir;
+        private ListView lvwRightDir;
         private Panel panel1;
         private Panel panel4;
         private Panel panel2;
